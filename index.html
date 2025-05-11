@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Altay Has - Bilgisayar Programcısı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1117;
+      --fg: #f4f4f5;
+      --accent: #5ad1ff;
+      --muted: #8b8b8b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      width: 280px;
+      background: #11131b;
+      padding: 40px 30px;
+      border-right: 1px solid #1c1f2a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .badge {
+      background-color: #1c1f2a;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--accent);
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill span {
+      display: block;
+      margin-bottom: 5px;
+    font-weight: 600;
+    }
+
+    .bar {
+      background-color: #1c1f2a;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 24px;
+    }
+
+    .fill {
+      height: 100%;
+      background-color: #5ad1ff;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 24px;
+      font-size: 0.85em;
+      color: #000;
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact li {
+      font-size: 0.95em;
+      color: var(--muted);
+    }
+
+    .footer {
+      font-size: 0.85em;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #1c1f2a;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      main {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <div>
+      <h1>Ali Altay Has</h1>
+      <p>Bilgisayar Programcılığı Öğrencisi</p>
+      <section class="contact">
+        <h2>İletişim</h2>
+        <ul>
+          <li>Email: ali.altay@example.com</li>
+          <li>Telefon: +90 507 105 0082</li>
+          <li><a href="https://github.com/AliAltayHas" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ali-altay-has-934026327/?originalSubdomain=tr" target="_blank">LinkedIn</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer">© Designed By gr0ve</div>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Hakkımda</h2>
+      <p>Ben Ali Altay Has. Bilgisayar programcılığı öğrencisiyim. Yazılım geliştirme süreçlerine ilgim büyük. Özellikle Python ve Java dillerinde kendimi geliştiriyor, backend geliştirme konularında deneyim kazanıyorum. Öğrenmeye açık, araştırmayı seven bir yapım var.</p>
+    </section>
+
+    <section>
+      <h2>Öğrenim Durumu</h2>
+      <ul>
+        <li><strong>2023 - 2025:</strong> Bilgisayar Programcılığı – İzmir Ekonomi Üniversitesi</li>
+        <li><strong>2019 - 2023:</strong> Şirinyer Anadolu Lisesi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Yabancı Diller</h2>
+      <ul>
+        <li><strong>İngilizce:</strong> Business Level</li>
+        <li><strong>Almanca:</strong> Beginner Level</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bildiğim Yazılım Dilleri</h2>
+      <div class="skills">
+        <div class="skill">
+          <span>HTML/CSS</span>
+          <div class="bar"><div class="fill" style="width: 75%;">%75</div></div>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="bar"><div class="fill" style="width: 80%;">%80</div></div>
+        </div>
+        <div class="skill">
+          <span>Java</span>
+          <div class="bar"><div class="fill" style="width: 60%;">%60</div></div>
+        </div>
+        <div class="skill">
+          <span>PHP</span>
+          <div class="bar"><div class="fill" style="width: 40%;">%40</div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="bar"><div class="fill" style="width: 20%;">%20</div></div>
+        </div>
+        <div class="skill">
+          <span>Unreal Engine</span>
+          <div class="bar"><div class="fill" style="width: 75%;">%75</div></div>
+        </div>
+        <div class="skill">
+          <span>SQL</span>
+          <div class="bar"><div class="fill" style="width: 85%;">%85</div></div>
+        </div>
+        <div class="skill">
+          <span>C#</span>
+          <div class="bar"><div class="fill" style="width: 45%;">%45</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projeler</h2>
+      <ul>
+        <li><strong>Stok Takip Sistemi:</strong> C# ile masaüstü uygulama (veritabanı bağlantılı)</li>
+        <li><strong>Java Mini Oyun:</strong> Swing ile yapılmış klavye kontrollü oyun</li>
+        <li><strong>Python ile Otomasyon:</strong> Excel dosyalarından veri çekip işleyen otomasyon</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
